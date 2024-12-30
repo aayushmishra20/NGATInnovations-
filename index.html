@@ -17,13 +17,16 @@
             text-decoration: none;
             color: white;
         }
-
-        nav {
+ nav {
             background-color: #8f8f8f;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: right;
+ 
         }
 
        nav .logo {
@@ -58,7 +61,10 @@ nav .logo img {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.navbar {
+        width: 100%;
+        padding-left: 20px;
+      }
 /* Navbar Styles */
 nav {
     display: flex;
@@ -74,6 +80,9 @@ nav {
     transition: background-color 0.3s ease-in-out;
     transform: translateY(0); /* Ensure the default visible state */
     transition: transform 0.3s ease-in-out; /* Smooth hide and show */
+    display: flex;
+            flex-wrap: wrap;
+            text-align: right;
 }
 
 nav.hidden {
@@ -99,6 +108,9 @@ ul.nav-links {
     list-style-type: none;
     display: flex;
     gap: 20px;
+    display: flex;
+            flex-wrap: wrap;
+            
 }
 
 ul.nav-links li a {
@@ -134,13 +146,13 @@ margin-bottom: 5px;
 padding: 10px;
 padding-bottom: 20px;
      height: 140vh
-     opacity 0;
+     opacity: 0;
      background: #d4d4d4;
      z-index: 10;
-    }
      
     
     
+   }
    .contact h2 {
      font-size: 2rem;
     letter-spacing: 1px;
@@ -572,6 +584,9 @@ h1, h2 {
     gap: 20px;
     margin-bottom: 40px;
     text-align: center;
+    display: flex;
+            flex-wrap: wrap;
+            align-content: center;
 }
 
 .vision, .mission {
@@ -595,6 +610,7 @@ h1, h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
     color:  #0076a3;
+    margin: 20px;
   }
 
 .directors {
@@ -606,6 +622,8 @@ h1, h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    display: flex;
+            flex-wrap: wrap;
 }
 
 .director-card {
@@ -616,11 +634,17 @@ h1, h2 {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+  flex-wrap: wrap; 
+   align-items: center;
+    align-content: center;
+    align-self: center;
 }
 .director-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #000000;
+     margin: 20px;
 }
 .director-card:hover {
     transform: translateY(-10px);
@@ -632,6 +656,10 @@ h1, h2 {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
      .timeline    h2 {
@@ -674,6 +702,8 @@ h1, h2 {
     justify-content: space-around;
     gap: 20px;
     margin-bottom: 40px;
+    display: flex;
+  flex-wrap: wrap; 
 }
 
 .grid-item {
@@ -735,32 +765,6 @@ h1, h2 {
         .form-container button:hover {
             background-color: #0288d1;
         }
-
-        /* Default styles for larger screens */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* For tablets (768px or smaller) */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-}
- @media screen and (max-width: 1280px) {
-            .card {
-                width: 90%;
-            } 
- }
-/* For mobile phones (480px or smaller) */
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-}
-        
     </style>
 </head>
 <body>
@@ -835,16 +839,16 @@ h1, h2 {
         <h2>Our Journey</h2>
         <ul>
             <li>
-                <span>May-2024</span> – Founded with a vision to innovate and inspire.
+                <span>may-2024</span> – Founded with a vision to innovate and inspire.
             </li>
             <li>
-                <span>Sept-2024</span> – Launched our first AI-based product, setting a new standard in technology.
+                <span>sept-2024</span> – Launched our first AI-based product, setting a new standard in technology.
             </li>
             <li>
-                <span>Oct-2024</span> – Expanded globally, serving clients across industries.
+                <span>oct-2024</span> – Expanded globally, serving clients across industries.
             </li>
             <li>
-                <span>Jan-2025</span> – Recognized as a leader in industrial automation and AI innovation.
+                <span>jan-2025</span> – Recognized as a leader in industrial automation and AI innovation.
             </li>
         </ul>
     </div>
